@@ -1,0 +1,58 @@
+{
+  "name": "beacon1",
+  "scripts": {
+  },
+  "env": {
+    "COUPON_URL": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "MAILER_HOST": {
+      "required": true
+    },
+    "MAILER_SENDER": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "RAILS_SERVE_STATIC_FILES": {
+      "required": true
+    },
+    "REDISTOGO_URL": {
+      "required": true
+    },
+    "REGISTRATION_MAILER_SENDER": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    },
+    "SENDGRID_PASSWORD": {
+      "required": true
+    },
+    "SENDGRID_USERNAME": {
+      "required": true
+    },
+    "SYSTEM_MAILER_RECEIVER": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql",
+    "redistogo",
+    "sendgrid"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
